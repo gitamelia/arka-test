@@ -6,7 +6,7 @@
 		$jumlahtelur2 = $jumlahtelur;
 		while($tanggal<32) {
 			if($tanggal%2==1 && $jumlahtelur2>19){ //ganjil
-				$bonus1= ($jumlahtelur2/20)*3;
+				$bonus1= 3;
 			}
 				if($bonus1%2==0 && $tanggal%5==0) {
 					$bonus = $bonus1*10;
@@ -18,7 +18,7 @@
 			}
 			
 			if($tanggal=[2,3,5,7,11,13,17,19,23,29,31] && $jumlahtelur2>11){ //prima
-				$bonus1= ($jumlahtelur2/12)*1;
+				$bonus1= 1;
 				if($bonus1%2==0 && $tanggal%5==0) {
 					$bonus = $bonus1*10;
 				}
